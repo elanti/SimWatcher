@@ -1,0 +1,8 @@
+{
+    "daint":{
+	"fullname":"Piz Daint",
+	"address":"daint",
+	"username":"lanti",
+	"scheduler":"SLURM"
+    }
+}
