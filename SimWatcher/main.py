@@ -1,7 +1,7 @@
-from SimWatcher.ssh import client
-from SimWatcher.computer import configReader
+from ssh import client
+from computer import configReader
 
-config_file = 'SimWatcher/computer/computer_config.json'
+config_file = 'computer/computer_config.json'
 computers = configReader.computerArray(config_file)
 
 ssh_clients = []

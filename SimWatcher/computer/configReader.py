@@ -1,5 +1,5 @@
 import json
-from SimWatcher.computer.computer import computer
+from computer.computer import computer
 
 
 class computerArray(object):
