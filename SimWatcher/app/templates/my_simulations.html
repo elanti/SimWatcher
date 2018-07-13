@@ -3,32 +3,35 @@
 {% block body %}
 <h1>My Simulations</h1>
 
-  {% for computer in computers %}
+{% for n in range(0,computers|length) %}
 
-<h3>{{ computer }}</h3>
-<table style="width:100%">
+<div class=computer>
+<h3>{{ computers[n] }}</h3>
+<table>
+  <col width="100">
+  <col width="400">
+  <col width="80">
+  <col width="100">
   <tr>
     <th>JobID</th>
     <th>Job Name</th>
     <th>Status</th>
     <th>Time</th>
   </tr>
-  {% for sim in simulations %}
-  {% for par in sim %}
+  {% for par in simulations[n] %}
   <tr>
-    <td>{{ par[0] }}</td>
-    <td>{{ par[2] }}</td>
-    <td>{{ par[4] }}</td>
-    <td>{{ par[5] }}</td>
+    {% for elm in par %}
+    <td>{{ elm }}</td>
+    {% endfor %}
   </tr>
   {% endfor %}
-  {% endfor %}
 </table>
+</div>
 {% endfor %}
 
 
 <form method="post">
-  <input type="submit" value="Update">
+  <input type="submit" value="Update (this may take some time)">
 </form>
 
 {% endblock %}

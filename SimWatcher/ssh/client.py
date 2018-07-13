@@ -1,6 +1,6 @@
 import os
 import paramiko
-import computer
+import SimWatcher.computer
 
 
 class sshClient(object):
