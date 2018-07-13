@@ -1,8 +1,9 @@
 {
     "daint":{
-	"fullname":"Piz Daint",
-	"address":"daint",
-	"username":"lanti",
-	"scheduler":"SLURM"
+	"fullname": "Piz Daint",
+	"address": "daint",
+	"username": "lanti",
+	"scheduler": "SLURM",
+	"need_ssh_tunnel": true
     }
 }

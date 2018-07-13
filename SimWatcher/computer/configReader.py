@@ -1,12 +1,9 @@
-#!/usr/bin/env python
 import json
-from .computer import computer
+from computer import computer
 
 
 class computerArray(object):
     def __init__(self, config_file):
-        """
-        """
         self.config_file = config_file
         with open(self.config_file) as jsonfile:
             global_config = json.load(jsonfile)
@@ -20,3 +17,8 @@ class computerArray(object):
         Make the computerArray object iterable
         """
         return iter(self.computers)
+
+
+if __name__ == '__main__':
+    print('In main...')
+    array = computerArray('computer_config.json')
