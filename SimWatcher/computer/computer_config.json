@@ -1,9 +1,17 @@
 {
     "daint":{
 	"fullname": "Piz Daint",
-	"address": "daint",
+	"address": "daint.cscs.ch",
 	"username": "lanti",
 	"scheduler": "SLURM",
 	"need_ssh_tunnel": true
+    },
+
+    "marconi":{
+	"fullname": "MARCONI",
+	"address": "login.marconi.cineca.it",
+	"username": "elanti00",
+	"scheduler": "SLURM",
+	"need_ssh_tunnel": false
     }
 }

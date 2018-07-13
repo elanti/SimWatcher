@@ -1,5 +1,5 @@
 import json
-from computer import computer
+from SimWatcher.computer.computer import computer
 
 
 class computerArray(object):
@@ -17,6 +17,9 @@ class computerArray(object):
         Make the computerArray object iterable
         """
         return iter(self.computers)
+
+    def __getitem__(self, ind):
+        return self.computers[ind]
 
 
 if __name__ == '__main__':
