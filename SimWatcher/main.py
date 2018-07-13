@@ -10,5 +10,5 @@ for computer in computers:
     ssh_clients.append(client.sshClient(computer))
 
 for ssh_client in ssh_clients:
-    output = ssh_client.sendCommand('squeue -u {}'.format(computer.username))
+    output = ssh_client.sendCommand("squeue -u {} -o '%.18i %.25j %.2t %.10M'".format(computer.username))
     print(output['stdout'])
